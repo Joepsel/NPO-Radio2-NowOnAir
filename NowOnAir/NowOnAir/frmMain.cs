@@ -44,11 +44,7 @@ namespace NowOnAir
         }
 
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            // doubleclick to open window seemed like a nice feature, but it doesn't work very well
-            //ShowWindow();
-        }
+        
 
 
         private void ShowWindow()
@@ -98,7 +94,7 @@ namespace NowOnAir
 
         private NowPlaying LoadDataFromFreed()
         {
-            // in office environments, often a proxy-server is used
+            // in corporate environments, often a proxy-server is used
             IWebProxy proxy = WebRequest.GetSystemWebProxy();
             proxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
 
@@ -127,8 +123,6 @@ namespace NowOnAir
         }
 
 
-
-
         private void btAbout_Click(object sender, EventArgs e)
         {
             int year = DateTime.Now.Year;
@@ -137,8 +131,17 @@ namespace NowOnAir
             tbOutput.Text = about;
         }
 
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            // doubleclick to open window seemed like a nice feature, but it doesn't work very well
+            //ShowWindow();
+        }
+
+
         private void notifyIcon1_DoubleClick(object sender, EventArgs e)
         {
+            // doubleclick to open window seemed like a nice feature, but it doesn't work very well
             //ShowWindow();
         }
 
@@ -158,12 +161,6 @@ namespace NowOnAir
             {
                 try
                 {
-                    // TODO: vreemde tekens lijken nog niet geladen te kunnen worden.
-
-                    // TODO: Animated icon weergeven tijdens laden. Zie:
-                    //       http://www.daveamenta.com/2008-05/c-webclient-usage/
-
-
                     NowPlaying np = LoadDataFromFreed();
 
                     string artist = np.Results[0].songfile.artist;

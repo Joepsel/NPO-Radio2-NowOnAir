@@ -46,7 +46,7 @@
             this.notifyIcon1.BalloonTipText = "Artist - Title";
             this.notifyIcon1.BalloonTipTitle = "NPO Radio 2: Now On Air";
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "NowOnAir v0.5";
+            this.notifyIcon1.Text = "NPO Radio 2: Now On Air\r\n\r\n(Klik om artiest en titel te tonen)";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
             this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
