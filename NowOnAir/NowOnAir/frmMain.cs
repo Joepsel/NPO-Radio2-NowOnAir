@@ -84,7 +84,6 @@ namespace NowOnAir
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
                 tbOutput.Text = ex.Message;
             }
 
@@ -115,6 +114,7 @@ namespace NowOnAir
 
         private void btRefresh_Click(object sender, EventArgs e)
         {
+            // update can take a while, tell user
             tbOutput.Text = "loading...";
             tbOutput.Update();
             btRefresh.Enabled = false;
@@ -126,7 +126,7 @@ namespace NowOnAir
         private void btAbout_Click(object sender, EventArgs e)
         {
             int year = DateTime.Now.Year;
-            string about = String.Format("Copyright © 2008-{0} Joep Versleijen", year);
+            string about = String.Format("Copyright © 2008-{0} Joepsel\r\n\r\nhttps://github.com/Joepsel/NPO-Radio2-NowOnAir/", year);
 
             tbOutput.Text = about;
         }
