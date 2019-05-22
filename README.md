@@ -8,4 +8,4 @@ The application is created using the following techniques:
 - .NET Framework 4.6.1
 - Windows Forms
 - C#
-- Visual Studio 2019 
+- Visual Studio Community 2017
