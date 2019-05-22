@@ -9,3 +9,4 @@ The application is created using the following techniques:
 - Windows Forms
 - C#
 - Visual Studio Community 2017
+- Json.NET (Newtonsoft.Json)
