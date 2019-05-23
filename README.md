@@ -10,3 +10,5 @@ The application is created using the following techniques:
 - C#
 - Visual Studio Community 2017
 - Json.NET (Newtonsoft.Json)
+
+![screenshot](https://github.com/Joepsel/NPO-Radio2-NowOnAir/blob/master/github-data/Screenshot01_Systray.png?raw=true)
